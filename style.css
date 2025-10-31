@@ -73,9 +73,7 @@ body {
 }
 
 /* -----------------------------
-   4) Accueil (presentation)
-   Left column: stacked info blocks
-   Right column: image
+   4) Accueil 
    ----------------------------- */
 .presentation {
     display: grid;
@@ -139,7 +137,7 @@ h2.section-title {
 
 .timeline-container {
     flex: 1;
-    min-width: 0; /* Pour éviter le débordement des flexbox */
+    min-width: 0;
 }
 
 .timeline {
@@ -174,6 +172,46 @@ h2.section-title {
     transform: translateY(-50%);
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     z-index: 2;
+}
+
+@media (max-width: 700px) {
+    .timeline-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    h2.section-title {
+        text-align: left;
+        margin-right: 0;
+        margin-left: 0;
+        justify-self: start;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-container {
+        padding: 0;
+    }
+
+    .timeline {
+        position: relative;
+        padding: 1rem 0 0 40px; 
+    }
+
+    .timeline::before {
+        left: 20px;
+        height: 100%;
+    }
+
+    .timeline-item {
+        padding-left: 60px;
+        margin-bottom: 1.5rem;
+    }
+
+    .timeline-dot {
+        left: 10px;
+    }
 }
 
 .timeline-content {
@@ -285,13 +323,19 @@ h2.section-title {
 
 @media (max-width: 700px) {
     .pinterest-gallery {
-        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: flex-start; /* align items to left */
     }
     .gallery-column {
-        flex: 1 1 50%;
+        /* keep three columns on small screens to match desktop layout */
+        flex: 0 0 30%;
+        max-width: 30%;
+        box-sizing: border-box;
     }
-    .pinterest-gallery > .gallery-column:nth-child(3) {
-        display: none;
+    .gallery-column img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
-/* Fin du bloc Pinterest Gallery */
