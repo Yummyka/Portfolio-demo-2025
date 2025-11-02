@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio - Expérience</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const footer = document.getElementById('footer');
+            
+            window.addEventListener('scroll', function() {
+                // Vérifie si l'utilisateur est proche du bas de la page
+                if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 100) {
+                    footer.classList.add('visible');
+                } else {
+                    footer.classList.remove('visible');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header class="header">
@@ -22,25 +36,37 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>2025</h3>
-                            <p>Master en Sciences Politiques</p>
+                            <h3>Master International Business and Sustainability</h3>
+                            <p>Sept 2025 - Juin 2027</p>
                             <p>Sciences Po Paris</p>
+                            <p>Master alliant économie, marketing et approfondissement des enjeux environnementaux.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>2023</h3>
-                            <p>Licence en Relations Internationales</p>
-                            <p>Université Paris 1 Panthéon-Sorbonne</p>
+                            <h3>Diplôme d'ingénieur</h3>
+                            <p>Sept 2023 - Juin 2027</p>
+                            <p>Telecom Paris</p>
+                            <p>Spécialités en Data Science et en Intelligence Artificielle.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>2020</h3>
-                            <p>Baccalauréat Général</p>
-                            <p>Mention Très Bien</p>
+                            <h3>Classe préparatiores</h3>
+                            <p>Sept 2021 - Juin 2023</p>
+                            <p>Aux Lazaristes la Salle</p>
+                            <p>Maths-Physique option Informatique</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Baccalauréat Général</h3>
+                            <p>Juin 2021</p>
+                            <p>Lycée Blaise Pascal, Clermont Ferrand</p>
+                            <p>Spécialités Mathématiques et Physique Chimie, Mention Très Bien avec félicitations du jury</p>
                         </div>
                     </div>
                 </div>
@@ -53,25 +79,32 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>2025 - 2026</h3>
-                            <p>Projet Capstone</p>
-                            <p>Sciences Po Paris</p>
+                            <h3>Projet Capstone</h3>
+                            <p>Sept 2025 - Mai 202</p>
+                            <p>Impact Studio (Sciences Po Paris)</p>
+                            <p>Mission de cartographie du milieu pour Newtones, 
+                            tenue d'interviews et réalisation d'un guide des campagnes à impact.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>2025 - 2026</h3>
-                            <p>Mission conseil solidaire</p>
-                            <p>Alter'Action</p>
+                            <h3>Mission conseil solidaire (bénévolat)</h3>
+                            <p>Sept 2025 - Fév 2026</p>
+                            <p>Alter'Action (Paris)</p>
+                            <p>Accompagnement d'une coopérative : 
+                                réalisation de benchmarks, cartographie de l'organisation 
+                                et étude de marché.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>2023 - 2024</h3>
-                            <p>Projet Artishow</p>
+                            <h3>Escape game pédagogique sur la cryptographie</h3>
+                            <p>Jan 2024 - Juin 2024</p>
                             <p>Telecom Paris</p>
+                            <p>Conception d'énigmes, élaboration du scénario 
+                                et création de la page web (HTML/CSS/JS).</p>
                         </div>
                     </div>
                 </div>
@@ -84,30 +117,49 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>2024 - 2025</h3>
-                            <p>Présidente de l'Association des Étudiants</p>
-                            <p>Sciences Po Paris</p>
+                            <h3>Présidente - TSM (Telecom Sound and Magic)</h3>
+                            <p>Mai 2024 - Juin 2025</p>
+                            <p>Telecom Paris</p>
+                            <p>Pilotage d'une équipe de 15 personnes, 
+                                réalisation d'une cinquantaine de prestations, 
+                                gestion du recrutement et formation.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>2023 - 2024</h3>
-                            <p>Responsable Communication</p>
-                            <p>Bureau des Étudiants</p>
+                            <h3>Membre du BDE Telecom Paris</h3>
+                            <p>Avril 2024 - Mai 2025</p>
+                            <p>Telecom Paris</p>
+                            <p>Organisation d'un week-end 
+                                (180 étudiants, budget 66k€) 
+                                et d'une campagne de parrainage.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>2022 - 2023</h3>
-                            <p>Bénévole</p>
-                            <p>Restos du Cœur</p>
+                            <h3>Première écoute - REC (Respect, Ecoute, Consentement)</h3>
+                            <p>Juin 2024 - Juin 2025</p>
+                            <p>Telecom Paris</p>
+                            <p>Formée à l'écoute de victimes de VSS/discriminations et collaboration avec l'administration pour l'organisation de campagnes de sensibilisation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Membre audit - Telecom Etude (Junior Entreprise)</h3>
+                            <p>Mai 2024 - Avril 2025</p>
+                            <p>Telecom Paris</p>
+                            <p>Relecture des documents d'études pour assurer la conformité juridique et éviter les litiges.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer id="footer" class="footer">
+        <!-- Le contenu du footer sera ajouté plus tard -->
+    </footer>
 </body>
 </html>
